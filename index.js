@@ -16,6 +16,10 @@ app.get('/favorite', (req, res) => {
     res.send(response);
 });
 
+app.get('/', (req, res) => {
+    res.send('Hello There!!! This is the root GET method. Please use say or favorite to go to destinated URL!');
+});
+
 app.listen(port, () => {
     console.log('API Served At =>  http://192.241.159.156:3000');
 });
