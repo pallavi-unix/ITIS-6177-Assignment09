@@ -10,7 +10,7 @@ app.get('/say', (req, res) => {
 });
 
 app.get('/favorite', (req, res) => {
-    const keyword = req.query.keyword;
+    const keyword = req.query.band;
     const functionName = require('./my-favorite-band');
     const response = functionName(keyword);
     res.send(response);
